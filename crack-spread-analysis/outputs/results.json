@@ -1,0 +1,40 @@
+{
+  "region": "gulf",
+  "dropped_negative_wti_days": [
+    "2020-04-20"
+  ],
+  "summary": {
+    "first_date": "2010-01-04",
+    "last_date": "2026-11-17",
+    "years": 16.9,
+    "trading_days": 4170,
+    "mean_321": 20.79,
+    "median_321": 18.32,
+    "max_321": 90.85,
+    "max_321_date": "2026-09-23",
+    "min_321": -0.21,
+    "min_321_date": "2014-12-23",
+    "pct_days_negative_321": 0.02,
+    "corr_daily_change_crack_vs_wti": -0.104
+  },
+  "backtest": {
+    "train_period": "2010-01-04 to 2018-12-28",
+    "test_period": "2019-01-03 to 2026-11-17",
+    "months_long": [
+      1,
+      2,
+      3,
+      7,
+      8,
+      12
+    ],
+    "test_months_held": 47,
+    "test_hit_rate_pct": 63.8,
+    "test_total_pnl_per_bbl": 63.84,
+    "test_buy_and_hold_pnl_per_bbl": 21.76,
+    "cost_per_trade": 0.05,
+    "num_position_changes": 32
+  },
+  "gasoline_peak_month": 8,
+  "diesel_peak_month": 10
+}
