@@ -19,9 +19,9 @@ Daily spot prices from the U.S. Energy Information Administration (EIA):
 
 | Series | EIA ID | Units |
 |---|---|---|
-| WTI crude, Cushing OK | `RWTC` | $/bbl |
-| Gulf Coast conventional regular gasoline | `EER_EPMRU_PF4_RGC_DPG` | $/gal (converted to $/bbl, × 42) |
-| Gulf Coast ultra-low sulfur diesel | `EER_EPD2DXL0_PF4_RGC_DPG` | $/gal (converted to $/bbl, × 42) |
+| WTI crude, Cushing OK | `RWTC` | USD per barrel |
+| Gulf Coast conventional regular gasoline | `EER_EPMRU_PF4_RGC_DPG` | USD per gallon (converted to USD per barrel, × 42) |
+| Gulf Coast ultra-low sulfur diesel | `EER_EPD2DXL0_PF4_RGC_DPG` | USD per gallon (converted to USD per barrel, × 42) |
 
 Gulf Coast prices are used because most U.S. refining capacity sits on the Gulf Coast. Crude is priced at WTI Cushing; published Gulf Coast margin benchmarks may use a different crude (for example, Louisiana Light Sweet), so levels here can differ from industry figures. One day is excluded: **2020-04-20**, when WTI spot settled at −$36.98. A margin computed against negative crude measures a storage squeeze at Cushing, not refining economics.
 
