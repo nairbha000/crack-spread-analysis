@@ -12,6 +12,7 @@ from pathlib import Path
 from crack import backtest
 from crack.data import load_csv, load_prices
 from crack.events import biggest_moves
+from crack.risk import risk_metrics
 from crack.plots import plot_backtest, plot_cracks, plot_seasonality
 from crack.seasonality import monthly_profile
 from crack.spreads import add_cracks, summary_stats, yearly_summary
@@ -38,6 +39,9 @@ def main():
 
     gas, dsl, c321 = (monthly_profile(df, c) for c in ("gasoline_crack", "diesel_crack", "crack_321"))
     bt, cum = backtest.run(df, a.split, cost=a.cost)
+    bt.update(risk_metrics(cum.diff().fillna(cum.iloc[0])))
+    bh = df.loc[a.split:, "crack_321"].iloc[1:].diff().fillna(0)
+    bt["buy_and_hold_risk"] = risk_metrics(bh)
     years = yearly_summary(df)
     events = biggest_moves(df)
 

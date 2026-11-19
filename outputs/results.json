@@ -33,7 +33,21 @@
     "test_total_pnl_per_bbl": 63.84,
     "test_buy_and_hold_pnl_per_bbl": 21.76,
     "cost_per_trade": 0.05,
-    "num_position_changes": 32
+    "num_position_changes": 32,
+    "max_drawdown_per_bbl": -31.22,
+    "max_drawdown_start": "2022-03-31",
+    "max_drawdown_trough": "2022-12-05",
+    "sharpe_annualized": 0.36,
+    "worst_day_per_bbl": -13.71,
+    "best_day_per_bbl": 12.93,
+    "buy_and_hold_risk": {
+      "max_drawdown_per_bbl": -56.24,
+      "max_drawdown_start": "2026-09-23",
+      "max_drawdown_trough": "2026-11-17",
+      "sharpe_annualized": 0.09,
+      "worst_day_per_bbl": -20.06,
+      "best_day_per_bbl": 12.93
+    }
   },
   "gasoline_peak_month": 8,
   "diesel_peak_month": 10
